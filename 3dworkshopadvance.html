@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance 3D Modeling Workshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0; /* Ensure no default body margin interferes with full-page background */
+        }
+        .page-background {
+            background-image: url(https://images.pexels.com/photos/30482193/pexels-photo-30482193/free-photo-of-high-tech-3d-printer-in-modern-workshop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        /* Basic button styling (you might want to refine this or use Tailwind components) */
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem; /* py-3 px-6 */
+            border-radius: 0.375rem; /* rounded-md */
+            text-decoration: none;
+            font-weight: 500; /* medium */
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+        .button-primary {
+            background-color: #3b82f6; /* bg-blue-600 example */
+            color: white;
+        }
+        .button-primary:hover {
+            background-color: #2563eb; /* hover:bg-blue-700 example */
+        }
+        .icon { /* Placeholder for icons, you might use SVG or font icons */
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-logo">
+            <a href="home.html">OpenLabs Site</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="3dworkshopbasic.html">3D Basic Workshops</a></li>
+            <li><a href="3dworkshopadvance.html">3D Advance Workshops</a></li>
+            <li><a href="laserworkshopbasic.html">Laser Cutter Basic Workshops</a></li>
+            <li><a href="laserworkshopadvance.html">Laser Cutter Advance Workshops</a></li>
+            <li><a href="knowledgelib.html">Knowledge Library</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div>
+</nav>
+
+    <div class="min-h-screen pt-24 pb-16 relative page-background">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="bg-red-400 backdrop-blur-sm rounded-lg overflow-hidden mb-12 shadow-xl">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                        <h1 class="text-3xl md:text-4xl font-bold mb-4 text-gray-600">
+                            Advance 3D Modeling Workshop
+                        </h1>
+                        <p class="text-gray-600 text-lg mb-6">
+                            Take your 3D modeling skills to the next level with advanced techniques, complex geometries, and professional workflows.
+                        </p>
+                        <a href="/contact" class="button button-primary self-start">
+                            Register Now
+                            <span class="icon">&rarr;</span> </a>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img
+                            src="https://blog.bccresearch.com/hubfs/Imported_Blog_Media/3D-PRINTING.jpg"
+                            alt="3D Modeling Workshop"
+                            class="w-full h-full object-cover max-h-96 md:max-h-none"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:flex md:gap-12">
+                <div class="md:w-2/3">
+                    <section class="bg-blue-100 mb-10  backdrop-blur-sm p-6 rounded-lg shadow-lg">
+                        <h2 class="text-2xl font-bold mb-4 text-Black">Overview</h2>
+                        <p class="text-Black mb-4">
+                            Advance your 3D modeling skills specifically for 3D printing. This workshop builds on foundational knowledge, focusing on complex techniques, mastering material parameters for key FDM filaments (like PLA, ABS, PETG/PEI), and professional design-for-print workflows. 
+                        </p>
+                        <p class="text-Black mb-4">
+                            Designed for those with basic experience, you'll learn to tackle intricate geometries, optimize models for printability, and complete a significant portfolio project, preparing you for sophisticated additive manufacturing challenges.
+                        </p>
+                    </section>
+
+                    <section class="mb-10 bg-purple-600 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+                        <h2 class="text-2xl font-bold mb-4 text-white">
+                            Learning Outcomes
+                        </h2>
+                        <ul class="list-disc pl-6 space-y-2 text-gray-200">
+                            <li>Master advanced modeling techniques and workflows</li>
+                            <li>Create complex organic and mechanical shapes</li>
+                            <li>Apply texturing and materials to models</li>
+                            <li>Export files in the correct format for 3D printing</li>
+                            <li>Create assembly-ready components with precise measurements</li>
+                            <li>Understanding different parameters for different materials</li>
+                            <li>Implement generative design principles</li>
+                        </ul>
+                    </section>
+
+                    <section class="mb-10 bg-green-500 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+                        <h2 class="text-2xl font-bold mb-4 text-white">Workshop Structure</h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="font-semibold text-lg text-white">Module 1: Advanced Modeling Techniques
+
+
+
+
+</h3>
+                                <ul class="list-disc pl-6 mt-2 text-gray-200">
+                                    <li>Non-destructive modeling workflows</li>
+                                    <li>Boolean operations and optimization</li>
+                                    <li>Subdivision surface modeling</li>
+                                    <li>Advanced sculpting techniques</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 class="font-semibold text-lg text-white">Module 2: Engineering and Precision</h3>
+                                <ul class="list-disc pl-6 mt-2 text-gray-200">
+                                    <li>More advanced modeling techniques</li>
+                                    <li>Parametric modeling fundamentals</li>
+                                    <li>Designing for manufacturing constraints</li>
+                                    <li>Working with precise measurements and tolerances</li>
+                                    <li>Creating assembly-ready components</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-white">Module 3: Optimization and Export</h3>
+                                <ul class="list-disc pl-6 mt-2 text-gray-200">
+                                    <li>Topology optimization for strength and material usage</li>
+                                    <li>Preparing models for various manufacturing processes</li>
+                                    <li>Advanced slicing techniques for 3D printing</li>
+                                    <li>Project work: designing your own object</li>
+                                    <li>Final project: creating a complex functional model</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="md:w-1/3 mt-10 md:mt-0">
+                    <div class="bg-yellow-500 backdrop-blur-sm p-6 rounded-lg mb-8 shadow-lg">
+                        <h2 class="text-2xl font-bold mb-4 text-white">
+                            Prerequisites
+                        </h2>
+                        <ul class="list-disc pl-6 space-y-2 text-gray-200">
+                            <li>Basic 3D modeling experience (our Basic Workshop or equivalent)</li>
+                            <li>Familiarity with 3D modeling software interface</li>
+                            <li>Understanding of basic 3D printing concepts</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-800 backdrop-blur-sm p-6 rounded-lg mb-8 shadow-lg">
+                        <h2 class="text-2xl font-bold mb-4 text-white">
+                            Tools Used
+                        </h2>
+                        <ul class="list-disc pl-6 space-y-2 text-gray-200">
+                            <li>PrusaSlicer 2.9.2 (For parameter control)</li>
+                            <li>Fusion360 (User Friendly)</li>
+                            <li>TinkerCAD (browser-based alternative)</li>
+                            <li>Meshmixer for model preparation and optimization</li>
+                            <li>Advanced 3D printers and materials demonstration</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-500 backdrop-blur-sm p-6 rounded-lg shadow-lg">
+                        <h2 class="text-xl font-bold mb-2 text-white">Workshop Details</h2>
+                        <ul class="space-y-3 text-gray-200">
+                            <li><span class="font-semibold text-white">Duration:</span> 1 day (3 hours)</li>
+                            <li><span class="font-semibold text-white">Location:</span> Your Location</li>
+                            <li><span class="font-semibold text-white">Group Size:</span> Minimum 8 ; Maximum 20 participants</li>
+                            <li><span class="font-semibold text-white">Cost:</span> €100 (includes materials)</li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="/contact" class="button button-primary w-full">
+                                Register Now
+                                <span class="icon">&rarr;</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

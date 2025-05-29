@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Laser Cutting Workshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+        .page-background {
+            background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm5rbXFybnY4YTd1N3g1b250YzI0Z2VuYjZ0NWVoeXQ0Z2h4b2IzdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pyvDmuNTHFxF5wuNYP/giphy.gif);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem; /* py-3 px-6 */
+            border-radius: 0.375rem; /* rounded-md */
+            text-decoration: none;
+            font-weight: 500; /* medium */
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+        .button-primary {
+            background-color: #2563eb; /* bg-blue-600 (example, can be tailored) */
+            color: white;
+        }
+        .button-primary:hover {
+            background-color: #1d4ed8; /* hover:bg-blue-700 (example) */
+        }
+        .icon {
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-logo">
+            <a href="home.html">OpenLabs Site</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="3dworkshopbasic.html">3D Basic Workshops</a></li>
+            <li><a href="3dworkshopadvance.html">3D Advance Workshops</a></li>
+            <li><a href="laserworkshopbasic.html">Laser Cutter Basic Workshops</a></li>
+            <li><a href="laserworkshopadvance.html">Laser Cutter Advance Workshops</a></li>
+            <li><a href="knowledgelib.html">Knowledge Library</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div>
+</nav>
+
+    <div class="min-h-screen pt-24 pb-16 relative page-background">
+        <div class="absolute inset-0 bg-black/60"></div> {/* Overlay remains transparent */}
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="bg-red-300 rounded-lg overflow-hidden mb-12 shadow-xl">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                        <h1 class="text-3xl md:text-4xl font-bold mb-4 text-white">
+                            Basic Laser Cutting Workshop
+                        </h1>
+                        <p class="text-gray-100 text-lg mb-6"> Start your journey with laser cutting technology and learn to create precise, beautiful designs with this powerful fabrication tool.
+                        </p>
+                        <a href="/contact" class="button button-primary self-start">
+                            Register for Workshop
+                            <span class="icon">&rarr;</span>
+                        </a>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img
+                            src="https://st4.depositphotos.com/1000874/31643/i/1600/depositphotos_316435380-stock-photo-the-man-is-working-with.jpg"
+                            alt="Basic Laser Cutting Workshop"
+                            class="w-full h-full object-cover max-h-96 md:max-h-none"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:flex md:gap-12">
+                <div class="md:w-2/3">
+                    <section class="mb-10 bg-blue-900 p-6 rounded-lg shadow-lg">
+                        <h2 class="text-2xl font-bold mb-4 text-white">Overview</h2>
+                        <p class="text-gray-200 mb-4">
+                            Our Basic Laser Cutting Workshop introduces you to the fundamentals of laser cutting technology. In this hands-on course, you'll learn how to design for laser cutting, operate the machine safely, and complete your first laser-cut projects.
+                        </p>
+                        <p class="text-gray-200 mb-4">
+                            Laser cutting is one of the most versatile digital fabrication tools, allowing for precise cutting and engraving on a variety of materials. This workshop provides a comprehensive introduction to this technology, combining theoretical knowledge with practical applications.
+                        </p>
+                    </section>
+
+                    <section class="mb-10 bg-green-200 p-6 rounded-lg shadow-lg"> 
+                        <h2 class="text-2xl font-bold mb-4 text-green-800"> 
+                            What You'll Learn
+                        </h2>
+                        <ul class="list-disc pl-6 space-y-2 text-green-700"> 
+                            <li>Understand laser cutter technology and its capabilities</li>
+                            <li>Learn safety procedures and machine operation</li>
+                            <li>Create vector designs suitable for laser cutting</li>
+                            <li>Understand material properties and laser settings</li>
+                            <li>Complete at least two laser-cut projects</li>
+                            <li>Gain confidence in independent machine operation</li>
+                        </ul>
+                    </section>
+
+                    <section class="mb-10 bg-gray-200 p-6 rounded-lg shadow-lg">
+                        <h2 class="text-2xl font-bold mb-4 text-whit">Workshop Structure</h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="font-semibold text-lg text-black">Session 1: Introduction & Design</h3>
+                                <ul class="list-disc pl-6 mt-2 text-black">
+                                    <li>Laser cutting technology overview</li>
+                                    <li>Safety procedures and machine introduction</li>
+                                    <li>Creating vector files with Inkscape (free software)</li>
+                                    <li>Design principles for laser cutting</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-black">Session 2: Hands-on Cutting</h3>
+                                <ul class="list-disc pl-6 mt-2 text-black">
+                                    <li>Material selection and preparation</li>
+                                    <li>Setting up the laser cutter</li>
+                                    <li>Power and speed settings for different materials</li>
+                                    <li>Project work: creating personalized designs</li>
+                                    <li>Troubleshooting common issues</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="bg-purple-600 p-6 rounded-lg shadow-lg"> 
+                        <h2 class="text-2xl font-bold mb-4 text-yellow-800">Projects</h2> 
+                        <p class="text-yellow-700 mb-4"> 
+                            During this workshop, you'll complete the following projects:
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg- rounded-lg overflow-hidden shadow-md">
+                                <img
+                                    src="https://images.pexels.com/photos/5582861/pexels-photo-5582861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    alt="Personal Nameplate"
+                                    class="w-full h-48 object-cover"
+                                />
+                                <div class="p-4">
+                                    <h3 class="font-semibold text-lg mb-2 text-white">Personal Nameplate</h3>
+                                    <p class="text-gray-200 text-sm">Create a custom nameplate or sign with engraving and cutting techniques.</p>
+                                </div>
+                            </div>
+
+                            <div class=" rounded-lg overflow-hidden shadow-md">
+                                <img
+                                    src="https://emb-public.nyc3.cdn.digitaloceanspaces.com/production/images/CM/81178/1/CM81178-1.JPG"
+                                    alt="Interlocking Design"
+                                    class="w-full h-48 object-cover"
+                                />
+                                <div class="p-4">
+                                    <h3 class="font-semibold text-lg mb-2 text-white">Interlocking Design</h3>
+                                    <p class="text-gray-100 text-sm">Design and fabricate a 3D object using interlocking flat pieces.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="md:w-1/3 mt-10 md:mt-0">
+                    <div class="bg-green-700 p-6 rounded-lg mb-8 shadow-lg"> 
+                        <h2 class="text-2xl font-bold mb-4 text-white">
+                             Who is this for?
+                        </h2>
+                        <ul class="list-disc pl-6 space-y-2 text-gray-200">
+                            <li>No prior experience with laser cutting required</li>
+                            <li>Basic computer skills</li>
+                            <li>Interest in digital fabrication and design</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-yellow-200 p-6 rounded-lg mb-8 shadow-lg">
+                        <h2 class="text-2xl font-bold mb-4 text-green-800"> 
+                            Tools & Materials
+                        </h2>
+                        <ul class="list-disc pl-6 space-y-2 text-green-700"> 
+                            <li>CO2 laser cutter</li>
+                            <li>Inkscape (free vector design software)</li>
+                            <li>Various materials (wood, acrylic, cardboard)</li>
+                            <li>Safety equipment</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                               <h2 class="text-xl font-bold mb-2 text-white">Workshop Details</h2>
+                        <ul class="space-y-3 text-gray-200">
+                            <li><span class="font-semibold text-white">Duration:</span> 1 day (3 hours)</li>
+                            <li><span class="font-semibold text-white">Location:</span> Your Location</li>
+                            <li><span class="font-semibold text-white">Group Size:</span> Minimum 8 ; Maximum 20 participants</li>
+                            <li><span class="font-semibold text-white">Cost:</span> €100 (includes materials)</li>
+                        </ul>
+                        <div class="mt-6">
+                            <a href="/contact" class="button button-primary w-full">
+                                Register for Workshop
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

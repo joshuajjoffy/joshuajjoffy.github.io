@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Fabrication Knowledge Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f4f6; /* A light gray background for the page */
+        }
+        .library-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .library-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-logo">
+            <a href="home.html">OpenLabs Site</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="3dworkshopbasic.html">3D Basic Workshops</a></li>
+            <li><a href="3dworkshopadvance.html">3D Advance Workshops</a></li>
+            <li><a href="laserworkshopbasic.html">Laser Cutter Basic Workshops</a></li>
+            <li><a href="laserworkshopadvance.html">Laser Cutter Advance Workshops</a></li>
+            <li><a href="knowledgelib.html">Knowledge Library</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div>
+</nav>
+
+    <header class="bg-gray-800 text-white p-6 shadow-lg">
+        <div class="container mx-auto">
+            <h1 class="text-3xl md:text-4xl font-bold">Digital Fabrication Knowledge Library</h1>
+            <p class="text-lg text-gray-300 mt-1">Your gateway to learning about 3D printing, laser cutting, and more.</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 border-b-2 border-blue-500 pb-2 mb-6">
+                Digital Fabrication Techniques
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-white p-6 rounded-lg shadow-md library-card">
+                    <h3 class="text-xl font-bold text-blue-600 mb-2">Introduction to 3D Printing</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Understand the fundamentals of additive manufacturing, how 3D printers work, and their various applications.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/3D_printing" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors text-sm font-medium">
+                        Learn about 3D Printing &rarr;
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md library-card">
+                    <h3 class="text-xl font-bold text-green-600 mb-2">Introduction to Laser Cutting</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Explore the basics of laser cutting technology, its precision, and how it's used for cutting and engraving various materials.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Laser_cutting" target="_blank" rel="noopener noreferrer" class="inline-block bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition-colors text-sm font-medium">
+                        Learn about Laser Cutting &rarr;
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md library-card">
+                    <h3 class="text-xl font-bold text-red-600 mb-2">Introduction to CNC Machining</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Discover Computer Numerical Control (CNC) machining, a subtractive manufacturing process for precisely shaping materials.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Numerical_control" target="_blank" rel="noopener noreferrer" class="inline-block bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition-colors text-sm font-medium">
+                        Learn about CNC Machining &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 border-b-2 border-purple-500 pb-2 mb-6">
+                Software & Design
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-white p-6 rounded-lg shadow-md library-card">
+                    <h3 class="text-xl font-bold text-purple-600 mb-2">3D Design with TinkerCAD</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Get started with 3D modeling using TinkerCAD, a free, easy-to-use web app ideal for beginners.
+                    </p>
+                    <a href="https://www.tinkercad.com/" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition-colors text-sm font-medium">
+                        Explore TinkerCAD &rarr;
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md library-card">
+                    <h3 class="text-xl font-bold text-orange-600 mb-2">Advanced 3D Modeling with Blender</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Dive into Blender, a powerful, free, and open-source 3D creation suite for more complex modeling, animation, and rendering.
+                    </p>
+                    <a href="https://www.blender.org/support/tutorials/" target="_blank" rel="noopener noreferrer" class="inline-block bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition-colors text-sm font-medium">
+                        Blender Tutorials &rarr;
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md library-card">
+                    <h3 class="text-xl font-bold text-teal-600 mb-2">Vector Design with Inkscape</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Learn to create vector graphics for laser cutting and other applications using Inkscape, a free and open-source editor.
+                    </p>
+                    <a href="https://inkscape.org/learn/tutorials/" target="_blank" rel="noopener noreferrer" class="inline-block bg-teal-500 text-white py-2 px-4 rounded hover:bg-teal-600 transition-colors text-sm font-medium">
+                        Inkscape Tutorials &rarr;
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md library-card">
+                    <h3 class="text-xl font-bold text-indigo-600 mb-2">Preparing Files for 3D Printing (Slicing)</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Understand the role of slicer software in converting 3D models into G-code instructions for your 3D printer.
+                    </p>
+                    <a href="https://all3dp.com/1/slicer-3d-printing-software-what-it/" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-500 text-white py-2 px-4 rounded hover:bg-indigo-600 transition-colors text-sm font-medium">
+                        Guide to Slicers &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 border-b-2 border-yellow-500 pb-2 mb-6">
+                Materials & Safety
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="bg-white p-6 rounded-lg shadow-md library-card">
+                    <h3 class="text-xl font-bold text-yellow-600 mb-2">Common 3D Printing Materials</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        An overview of popular filaments like PLA, ABS, PETG, their properties, and best uses.
+                    </p>
+                    <a href="https://all3dp.com/1/3d-printing-materials-guide-3d-printer-material/" target="_blank" rel="noopener noreferrer" class="inline-block bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600 transition-colors text-sm font-medium">
+                        3D Printing Materials Guide &rarr;
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md library-card">
+                    <h3 class="text-xl font-bold text-lime-600 mb-2">Tips for Laser Cutting Wood</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Learn best practices, common wood types, and settings for successful laser cutting and engraving of wood.
+                    </p>
+                    <a href="https://www.troteclaser.com/en/knowledge/tips-for-laser-cutting/laser-cutting-wood" target="_blank" rel="noopener noreferrer" class="inline-block bg-lime-500 text-white py-2 px-4 rounded hover:bg-lime-600 transition-colors text-sm font-medium">
+                        Laser Cutting Wood Tips &rarr;
+                    </a>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md library-card">
+                    <h3 class="text-xl font-bold text-pink-600 mb-2">Guide to Laser Cutting Acrylic</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Discover techniques for cutting and engraving acrylic, achieving clean edges and detailed designs.
+                    </p>
+                    <a href="https://formlabs.com/blog/laser-cutting-acrylic/" target="_blank" rel="noopener noreferrer" class="inline-block bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600 transition-colors text-sm font-medium">
+                        Laser Cutting Acrylic Guide &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 border-b-2 border-gray-500 pb-2 mb-6">
+                Related Institutions in Hamburg
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                 <div class="bg-white p-4 rounded-lg shadow-md library-card text-center">
+                    <a href="https://www.hsu-hh.de/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-blue-600 font-medium">
+                        <img src="https://upload.wikimedia.org/wikipedia/de/d/d2/Logo_Helmut-Schmidt-Universit%C3%A4t_Hamburg.svg" alt="Helmut Schmidt Universität Logo" class="h-16 mx-auto mb-2">
+                        Helmut Schmidt University
+                    </a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md library-card text-center">
+                    <a href="https://www.uni-hamburg.de/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-blue-600 font-medium">
+                         <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/UHH_Universit%C3%A4t_Hamburg_Logo.svg" alt="Universität Hamburg Logo" class="h-16 mx-auto mb-2">
+                        Universität Hamburg
+                    </a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md library-card text-center">
+                    <a href="https://www.tuhh.de/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-blue-600 font-medium">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/TUHH_logo-wortmarke_de_rgb.png" alt="TUHH Logo" class="h-16 mx-auto mb-2 object-contain">
+                        TU Hamburg
+                    </a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md library-card text-center">
+                    <a href="https://www.haw-hamburg.de/" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-blue-600 font-medium">
+                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/HAW_Marke_RGB-72dpi.png" alt="HAW Hamburg Logo" class="h-16 mx-auto mb-2 object-contain">
+                        HAW Hamburg
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-700 text-gray-300 text-center p-6 mt-12">
+        <p>&copy; <span id="currentYear"></span> Knowledge Library. For educational purposes.</p>
+        <p class="text-sm">Content curated from public resources and workshop information.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

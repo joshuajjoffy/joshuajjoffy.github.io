@@ -1,0 +1,104 @@
+/* style.css */
+
+/* Global body adjustment for fixed navbar */
+body {
+    padding-top: 75px; /* Adjust this value if your navbar height changes */
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* Matches Tailwind's default font-sans */
+    margin: 0; /* Reset default margin */
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #2d3748; /* Tailwind gray-800 */
+    color: #ffffff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure navbar stays on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem; /* Consistent padding with Tailwind's px-4 for container */
+}
+
+.navbar-logo a {
+    font-size: 1.75rem; /* text-xl or text-2xl equivalent */
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin-left: 1.5rem; /* ml-6 equivalent */
+}
+
+.navbar-links a {
+    color: #e2e8f0; /* Tailwind gray-300 */
+    text-decoration: none;
+    padding: 0.5rem 0.75rem; /* py-2 px-3 equivalent */
+    border-radius: 0.25rem; /* rounded-md */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500; /* font-medium */
+}
+
+.navbar-links a:hover {
+    background-color: #4a5568; /* Tailwind gray-700 */
+    color: #ffffff;
+}
+
+.navbar-links a.active {
+    background-color: #4299e1; /* Tailwind blue-500 */
+    color: #ffffff;
+    font-weight: 600; /* font-semibold */
+}
+
+/* Basic Mobile Responsiveness for Navbar Links */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links {
+        margin-top: 0.75rem; /* mt-3 */
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li {
+        margin-left: 0;
+        margin-bottom: 0.5rem; /* mb-2 */
+        width: 100%;
+    }
+    .navbar-links a {
+        display: block; /* Make links take full width for easier tapping */
+        text-align: left;
+    }
+    body {
+        /* Adjust padding-top if navbar height changes significantly on mobile */
+        /* This might need JavaScript for a dynamic height calculation if the nav wraps to many lines */
+        padding-top: 120px; /* Example: increased padding if nav stacks and takes more height */
+    }
+}
+
+/* Optional: Style for main content area to ensure it's visually distinct if body bg is complex */
+.main-content-area {
+    /* This class would be added to the main div wrapping your page content,
+       after the navbar, if you need specific styling not covered by existing body/container setups.
+       For now, most pages manage their backgrounds and padding directly.
+    */
+}
